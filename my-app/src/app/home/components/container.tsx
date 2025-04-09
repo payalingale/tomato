@@ -1,13 +1,8 @@
-import { Url } from "node:url";
 import React, { FunctionComponent } from "react";
 
-type Props = {
-  headerImg: Url;
-};
-
-const Container: FunctionComponent<Props> = () => {
+const Container: FunctionComponent = () => {
   return (
-    <div className="bg-[url('/assets/frontend_assets/header_img.png')] bg-cover bg-center h-120 rounded-2xl text-white flex items-start justify-center p-3 align-middle ">
+    <div className="bg-[url('/assets/frontend_assets/header_img.png')] bg-cover bg-center h-120 rounded-2xl text-white flex flex-col items-start justify-center p-3 align-middle ">
       <h1 className="text-7xl p-3">
         Order your <br />
         favourite food here
